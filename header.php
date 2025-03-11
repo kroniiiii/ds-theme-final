@@ -8,7 +8,6 @@
     <?php wp_head();?>
 </head>
 <body <?php body_class(); ?>>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sint.</p>
     <header>
         <section class = "top-bar">
             <div class="logo">
@@ -20,7 +19,9 @@
         </section>
         <section class="menu-area">
             <nav class="main-menu">
-                Menu 
+                <?php wp_nav_menu(
+                    array('theme_location' => 'wp_devs_main_menu', 'depth' =>2));
+                ?>
             </nav>
         </section>
     </header>
