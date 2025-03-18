@@ -12,6 +12,6 @@ register_nav_menus(
         'wp_devs_main_menu' => 'Main Menu',
         'wp_devs_footer_menu' => 'Footer Menu'
     )
-)
+    ); 
 
 ?>
